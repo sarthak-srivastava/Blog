@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Sarthak's Blog</title>
+    </head>
+    <body>
+        <p>Hi There!</p>
+        <p>It works!</p>
+        <p>{% for post in posts %}
+            {{post.author}}<br>
+            {{post}} <br>
+            {{post.text}}<br>
+            {% endfor %}
+        </p>
+    </body>
+</html>
