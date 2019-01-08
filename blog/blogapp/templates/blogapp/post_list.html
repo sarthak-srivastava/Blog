@@ -1,15 +1,13 @@
-<html>
-    <head>
-        <title>Sarthak's Blog</title>
-    </head>
-    <body>
-        <p>Hi There!</p>
-        <p>It works!</p>
-        <p>{% for post in posts %}
-            {{post.author}}<br>
-            {{post}} <br>
-            {{post.text}}<br>
-            {% endfor %}
-        </p>
-    </body>
-</html>
+{% extends 'blogapp/base.html'%}
+{% block content %}
+                        {% for post in posts %}
+                            <div class="post">
+                                <div class="date">
+                                    <p>published: {{ post.published_date }}</p>
+                                    <p>Author: {{post.author }}</p>
+                                </div>
+                                <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                                <p>{{ post.text|linebreaksbr }}</p>
+                            </div>
+                        {% endfor %}
+{% endblock %}
