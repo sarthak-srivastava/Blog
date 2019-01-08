@@ -1,0 +1,11 @@
+The Project is Django based and has following heirarchy
+                      Blog (project directory)
+                              |
+                              V
+                        blogapp(django app)
+ Blog project directory consists of:
+ manage.py - enables us to run django based utitlity functions such as hosting development server, making database entries,etc.
+ blog folder:
+  settings.py
+  wsgi.py
+  urls.py
