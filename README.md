@@ -6,7 +6,7 @@ Database used: sqlite3
 Requirements:
 - Python 3.6
 - Django 2.1.1
-- CrsipyForms
+- CrsipyForms (`pip install django-crispy-forms`)
 
 ## Procedure to Setup
 
