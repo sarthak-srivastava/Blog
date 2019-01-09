@@ -6,6 +6,15 @@ The Project is Django based and has following heirarchy
  Blog project directory consists of:
  manage.py - enables us to run django based utitlity functions such as hosting development server, making database entries,etc.
  blog folder:
-  settings.py
-  wsgi.py
-  urls.py
+  settings.py - consists of settings of installed apps as well as login/logout redirect link
+  wsgi.py - used while deploying the website on a production server
+  urls.py - Resolves entered urls in the browser using regular expressions and calling the required views
+  
+  blogapp folder:
+    static folder: contains css, javascript files used in the html templates
+    templates folder: contains html templates used along with context passed on from views to display final page containing required information on the webpage.
+    admin.py - registers the created model, for access from the admin panel.
+    models.py - contains Post object class, which corresponds to the entries created in the database upon migrations
+    views.py - contains the user registration, user login, user logout, post list, post detail/edit and new post creation process request handling code. It is also responsible for rendering/redirecting to the required html page with proper contexts used in the template.
+    urls.py - contains url resolution code using regular expressions. It comes into action only when the compiler is redirected here from url.py in blog folder explained above.
+    forms.py - contains the blueprint of user registration form and post creation form
