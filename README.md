@@ -7,6 +7,7 @@ Requirements:
 - Python 3.6
 - Django 2.1.1
 - CrsipyForms (`pip install django-crispy-forms`)
+- Coverage (`pip install coverage==3.6 `)
 
 ## Procedure to Setup
 
