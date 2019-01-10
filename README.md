@@ -6,7 +6,8 @@ Database used: sqlite3
 Requirements:
 - Python 3.6
 - Django 2.1.1
-- CrsipyForms
+- CrsipyForms (`pip install django-crispy-forms`)
+- Coverage (`pip install coverage==3.6 `)
 
 ## Procedure to Setup
 
@@ -15,5 +16,5 @@ Requirements:
 3. Make migrations using `python manage.py makemigrations`
 4. Migrate using `python manage.py migrate`
 5. Run the server locally on your machine using `python manage.py runserver`
-
+6. To run test script, run `coverage run manage.py test blogapp -v 2`
 
